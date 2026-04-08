@@ -14,77 +14,45 @@
 
         <div class="grid">
 
-            <div class="card">
-                <h2>📜 Receipts (Completed Orders)</h2>
-                <p>View receipts after customer payments are completed.</p>
+            <div class="card" onclick="goTo('receipts.html')">
+                <h2>📜 Receipts</h2>
+                <p>View completed payments from orders</p>
             </div>
 
-            <div class="card">
-                <h2>🧾 Invoices (Supplies Received)</h2>
-                <p>Invoices when store receives products for snacks.</p>
+            <div class="card" onclick="goTo('invoices.html')">
+                <h2>🧾 Invoices</h2>
+                <p>Supplies received by the store</p>
             </div>
 
-            <div class="card">
-                <h2>⏳ Pending Payments (Orders Out)</h2>
-                <p>Orders delivered but not yet paid.</p>
+            <div class="card" onclick="goTo('pending-orders.html')">
+                <h2>⏳ Pending Orders</h2>
+                <p>Orders delivered but not yet paid</p>
             </div>
 
-            <div class="card">
-                <h2>✅ Completed Payments (Orders Out)</h2>
-                <p>Payments completed for delivered orders.</p>
+            <div class="card" onclick="goTo('completed-orders.html')">
+                <h2>✅ Completed Orders</h2>
+                <p>Paid and completed orders</p>
             </div>
 
-            <div class="card">
-                <h2>📦 Pending Payments (Supplies)</h2>
-                <p>Payments due for delivered goods to the store.</p>
+            <div class="card" onclick="goTo('pending-supplies.html')">
+                <h2>📦 Pending Supplies</h2>
+                <p>Payments due for delivered goods</p>
             </div>
 
-            <div class="card">
-                <h2>💰 Completed Payments (Supplies)</h2>
-                <p>Payments completed for delivered store supplies.</p>
+            <div class="card" onclick="goTo('completed-supplies.html')">
+                <h2>💰 Completed Supplies</h2>
+                <p>Payments completed for supplies</p>
             </div>
-            <div class="grid">
 
-    <div class="card" onclick="goTo('receipts.html')">
-        <h2>📜 Receipts</h2>
-        <p>View completed payments from orders</p>
-    </div>
-
-    <div class="card" onclick="goTo('invoices.html')">
-        <h2>🧾 Invoices</h2>
-        <p>Supplies received by the store</p>
-    </div>
-
-    <div class="card" onclick="goTo('pending-orders.html')">
-        <h2>⏳ Pending Orders</h2>
-        <p>Orders not yet paid</p>
-    </div>
-
-    <div class="card" onclick="goTo('completed-orders.html')">
-        <h2>✅ Completed Orders</h2>
-        <p>Paid and completed orders</p>
-    </div>
-
-    <div class="card" onclick="goTo('pending-supplies.html')">
-        <h2>📦 Pending Supplies</h2>
-        <p>Payments due for supplies</p>
-    </div>
-
-    <div class="card" onclick="goTo('completed-supplies.html')">
-        <h2>💰 Completed Supplies</h2>
-        <p>Paid supplies</p>
-    </div>
-
-</div> 
-            
         </div>
 
     </div>
-<script>
-function goTo(page) {
-    window.location.href = page;
-}
-</script>
-    
+
+    <script>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
 </body>
 </html>
