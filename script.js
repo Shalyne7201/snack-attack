@@ -7,3 +7,6 @@ function login() {
         alert("Only Admin dashboard is built for now.");
     }
 }
+.card {
+    cursor: pointer;
+}
